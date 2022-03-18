@@ -6,8 +6,8 @@ if(empty($attractie)){
     $errors[] = "vul de attractie-naam in.";
 }
 $type = $_POST['type'];
-$capaciteit = $_POST['capaciteit']
-if(!is_numeric($capaciteit)){
+$capaciteit = $_POST['capaciteit'];
+if (!is_numeric($capaciteit)){
     $errors[] = "Vul voor capaciteit een geldig getal in.";
 }
 $prioriteit = $_POST['prioriteit'];
