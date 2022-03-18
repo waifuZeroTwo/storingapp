@@ -6,7 +6,7 @@ if(empty($attractie)){
     $errors[] = "vul de attractie-naam in.";
 }
 $type = $_POST['type'];
-$capaciteit = $_POST['capaciteit'];
+$capaciteit = $_POST['capaciteit']
 if(!is_numeric($capaciteit)){
     $errors[] = "Vul voor capaciteit een geldig getal in.";
 }
@@ -18,7 +18,7 @@ else{
     $newsletter = false;
 }
 $melder = $_POST['melder'];
-$overige_info = $_POST['overige']
+$overige_info = $_POST['overige'];
 
 echo $attractie . " / " . $type . " / " . $capaciteit . " / " . $prioriteit . " / " . $melder . " / " . $overige_info;
 
@@ -34,8 +34,8 @@ $statement->execute([
     ":attractie" => $attractie,
     ":type" => $type,
     ":capaciteit" => $capaciteit,
-    ":prioriteit" => $prioriteit
-    ":melder" => $melder
+    ":prioriteit" => $prioriteit,
+    ":melder" => $melder,
     ":overige" => $overige_info
 ]);
 if (isset($errors)){
