@@ -37,15 +37,18 @@
                 <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input">
             </div>
             <div class="form-group">
-                <label for="newsletter">Nieuwsbrief:</label>
-                <input type="checkbox" name="newsletter" id="newsletter">
-                <label for="newsletter">Ik wil graag de nieuwsbrief ontvangen</label>
+                <label for="prioriteit">prio:</label>
+                <input type="checkbox" name="prioriteit" id="prioriteit">
+                <label for="prioriteit">melding met prioriteit</label>
             </div>
             <div class="form-group">
                 <label for="melder">Naam melder:</label>
                 <input type="text" name="melder" id="melder" class="form-input">
             </div>
-            
+            <div class="form-group">
+                <label for="overige_info">overig</label>
+                <textarea name="overige_info" id="overige_info" cols="30" rows="4" class="form-input"></textarea>
+            </div> 
             <input type="submit" value="Verstuur melding">
 
         </form>
