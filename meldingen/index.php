@@ -27,11 +27,33 @@
         $meldingen = $statement->fetchAll(PDO::FETCH_ASSOC)
         ?>
 
-        <?php foreach ($meldingen as $melding)
-        {
-            echo "<p>" . $melding['attractie'] . "," . " " . "Type:" .  $melding['type'] . "</p>";
-        }
-        ?>
+        <table>
+            <tr>
+                <th>attractie</th>
+                <th>type</th>
+                <th>capaciteit</th>
+                <th>prioriteit</th>
+                <th>melder</th>
+                <th>overige_info</th>
+            </tr>
+            <?php foreach($meldingen as $melding): ?>
+                <tr>
+                    <td><?php echo $melding['attractie']; ?></td>
+                    <td><?php echo $melding['type']; ?></td>
+                    <td><?php echo $melding['capaciteit']; ?></td>
+                    <td><?php if ($melding['prioriteit'] == 1)
+                    {
+                        echo 'ja';
+                    } 
+                    elseif ($melding['prioriteit'] == 0)
+                    {
+                        echo 'nee';
+                    } ?></td>
+                    <td><?php echo $melding['melder']; ?></td>
+                    <td><?php echo $melding['overige_info']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
     </div>  
 
 </body>
