@@ -356,7 +356,3 @@ label{
     page-break-after: avoid;
   }
 }
-#overige_info{
-  resize: both;
-  overflow: auto;
-}
