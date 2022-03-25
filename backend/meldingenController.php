@@ -6,19 +6,23 @@ if(empty($attractie)){
     $errors[] = "vul de attractie-naam in.";
 }
 $type = $_POST['type'];
+
 $capaciteit = $_POST['capaciteit'];
 if (!is_numeric($capaciteit)){
     $errors[] = "Vul voor capaciteit een geldig getal in.";
 }
+
 $prioriteit = $_POST['prioriteit'];
-if(isset($_POST['newsletter'])){
-    $newsletter = true;
+if(isset($_POST['prioriteit'])) == 1
+{
+    $prioriteit = true;
 }
 else{
-    $newsletter = false;
+    $prioriteit = false;
 }
 $melder = $_POST['melder'];
-$overige_info = $_POST['overige'];
+
+$overige_info = $_POST['overige_info'];
 
 echo $attractie . " / " . $type . " / " . $capaciteit . " / " . $prioriteit . " / " . $melder . " / " . $overige_info;
 
