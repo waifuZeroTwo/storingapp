@@ -23,13 +23,13 @@
                 <label for="type">Type</label>
                 <select name="type" id="type">
                     <option value="">-- kies een type --</option>
-                    <option value="A">achtbaan</option>
-                    <option value="B">draaiend</option>
-                    <option value="C">kinder</option>
-                    <option value="D">horeca</option>
-                    <option value="E">show</option>
-                    <option value="F">water</option>
-                    <option value="G">overig</option>
+                    <option value="Achtbaan">achtbaan</option>
+                    <option value="Draaiend">draaiend</option>
+                    <option value="Kinder">kinder</option>
+                    <option value="Horeca">horeca</option>
+                    <option value="Show">show</option>
+                    <option value="Water">water</option>
+                    <option value="Overig">overig</option>
                 </select>
             </div>
             <div class="form-group">
