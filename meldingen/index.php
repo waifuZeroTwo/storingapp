@@ -52,6 +52,7 @@
                     } ?></td>
                     <td><?php echo $melding['melder']; ?></td>
                     <td><?php echo $melding['overige_info']; ?></td>
+                    <td><a href="edit.php">Aanpassen</a></td>
                 </tr>
             <?php endforeach; ?>
         </table>
