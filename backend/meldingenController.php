@@ -13,7 +13,7 @@ if (!is_numeric($capaciteit)){
 }
 
 $prioriteit = $_POST['prioriteit'];
-if(isset($_POST['prioriteit'])) == 1
+if(isset($_POST['prioriteit']))
 {
     $prioriteit = true;
 }
