@@ -29,12 +29,13 @@
 
         <table>
             <tr>
-                <th>attractie</th>
-                <th>type</th>
-                <th>capaciteit</th>
-                <th>prioriteit</th>
-                <th>melder</th>
-                <th>overige_info</th>
+                <th>Attractie</th>
+                <th>Type</th>
+                <th>Capaciteit</th>
+                <th>Prioriteit</th>
+                <th>Melder</th>
+                <th>Overige_info</th>
+                <th>Aanpassen</th>
             </tr>
             <?php foreach($meldingen as $melding): ?>
                 <tr>
